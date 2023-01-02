@@ -27,6 +27,12 @@ class Note extends Database{
         $query->execute([':title' => $this->title, ':uuid' => $this->uuid, ':content'=>$this->content]);
     }
 
+    public function delete(){
+        $query = $this->connect()->prepare("DELETE FROM notes WHERE uuid = :uuid ;");
+        $query->execute([':uuid' => $this->uuid]);
+    }
+    
+
     public static function getNote($id){
         $db = new Database();
         

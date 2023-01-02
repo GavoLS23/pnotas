@@ -43,7 +43,7 @@ if(count($_POST)>0){
         <textarea name="content" placeholder="Content..." id="" cols="30" rows="10"><?php echo $note->getContent()?></textarea>
         <input class="upd-b" type="submit" value="Update note"/>
         <div class="del-b" type="submit">
-            <a class="del-b" href="?view=view&op=del&id=<?php echo $note->getUUID()?>">Delete note</a>
+            <a class="del-b" href="?view=del&id=<?php echo $note->getUUID()?>">Delete note</a>
         </div>
     </form>
 
