@@ -1,0 +1,16 @@
+{
+    "name": "gavols/notas",
+    "description": "Una aplicacion sencilla de notas.",
+    "autoload": {
+        "psr-4": {
+            "Gavols\\Notas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gustavo de Jesus Leon Santos",
+            "email": "lsgavo23@gmail.com"
+        }
+    ],
+    "require": {}
+}
